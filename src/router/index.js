@@ -144,7 +144,7 @@ export const constantRoutes = [
         path: 'menu2',
         component: () => import('@/views/nested/menu2/index'),
         name: 'Menu2',
-        meta: { title: 'menu2' }
+        meta: { title: '医疗保障清单' }
       }
     ]
   },
@@ -158,6 +158,11 @@ export const constantRoutes = [
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
+  },
+  {
+    path: 'printPage',
+    component: () => import('@/views/printPage'),
+    children:[]
   },
 
   // 404 page must be placed at the end !!!
