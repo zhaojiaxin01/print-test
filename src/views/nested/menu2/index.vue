@@ -625,30 +625,23 @@ export default {
   }
 }
 // 重写样式
-::v-deep .el-table-box .el-table td,
-.el-table th.is-leaf,
-::v-deep .el-table-box .el-table--border td,
-.el-table--border th,
-.el-table--border td,
-.el-table--border th,
-::v-deep
-  .el-table-box
-  .el-table__body-wrapper
-  .el-table--border.is-scrolling-left
-  ~ .el-table__fixed,
-.el-table td,
-::v-deep .el-table-box .el-table th.is-leaf {
-  border-bottom: 1px solid #333;
-  border-right: 1px solid #333;
-}
-::v-deep .el-table-box .el-table th,
-.el-table tr {
-  border-top: 1px solid #333;
-}
-::v-deep .el-table-box .el-table th,
-::v-deep .el-table-box .el-table td {
-  padding: 5px 0;
-  color: #333;
-  height: 30px;
+::v-deep .el-table-box {
+  .el-table th.is-leaf,
+  .el-table--border td,
+  .el-table--border th,
+  .el-table--border td,
+  .el-table--border th {
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+  }
+  .el-table th,
+  .el-table tr {
+    border-top: 1px solid #333;
+  }
+  .el-table td {
+    padding: 5px 0;
+    color: #333;
+    height: 30px;
+  }
 }
 </style>
